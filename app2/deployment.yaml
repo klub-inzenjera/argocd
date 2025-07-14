@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: echo1
+  name: echo2
   namespace: default
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: echo1
+      app: echo2
   template:
     metadata:
       labels:
-        app: echo1
+        app: echo2
     spec:
       containers:
-        - name: echo1
+        - name: echo2
           image: hashicorp/http-echo
           args:
-            - "-text=App 1"
+            - "-text=App 2"
           ports:
             - containerPort: 5678
