@@ -1,3 +1,5 @@
+/external-dns
+
 # Terraform state files
 *.tfstate
 *.tfstate.*
