@@ -4,12 +4,12 @@ metadata:
   name: echo-route-1
   namespace: default
   annotations:
-    external-dns.alpha.kubernetes.io/hostname: app.klubinzenjera.com
+    external-dns.alpha.kubernetes.io/hostname: app1.klubinzenjera.com
 spec:
   parentRefs:
     - name: gateway1
-#  hostnames:
-#    - app1.klubinzenjera.com
+  hostnames:
+    - app1.klubinzenjera.com
   rules:
     - matches:
         - path:
